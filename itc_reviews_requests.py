@@ -17,7 +17,7 @@ class ITCApi:
 
         self.session = session()
 
-        r = self.session.get('https://olympus.itunes.apple.com/v1/app/config?hostname=itunesconnect.apple.com')
+        r = self.session.get('https://appstoreconnect.apple.com/olympus/v1/app/config?hostname=itunesconnect.apple.com')
 
         apple_widget_key = json.loads(r.text)["authServiceKey"]
 
