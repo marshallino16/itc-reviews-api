@@ -58,7 +58,7 @@ class ITC:
         }
 
         self.http.follow_redirects = False
-        resp, content = self.http.request('https://olympus.itunes.apple.com/v1/session', 'GET', headers=headers)
+        resp, content = self.http.request('https://appstoreconnect.apple.com/olympus/v1/session', 'GET', headers=headers)
         self.http.follow_redirects = True
 
         self.itctx = re.compile('itctx=(.*?);').findall(resp['set-cookie'])[0]
