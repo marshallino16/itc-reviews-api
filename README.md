@@ -1,5 +1,6 @@
 # ITC Reviews API
 
+Homemade iTunes Connect API for app reviews.
 Read and Reply to all app reviews. 
 
 ## What you can do
