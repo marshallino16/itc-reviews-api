@@ -40,7 +40,7 @@ class ITCApi:
         #print(self.session.cookies)
         
         # Requests itunes connect page that will give us itCtx cookie needed for api requests
-        self.session.get('https://olympus.itunes.apple.com/v1/session', allow_redirects=False)
+        self.session.get('https://appstoreconnect.apple.com/olympus/v1/session', allow_redirects=False)
         #print(self.session.cookies)
         if 'myacinfo' not in self.session.cookies.get_dict().keys():
             raise Exception('Didn\'t get the myacinfo cookie')
