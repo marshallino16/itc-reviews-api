@@ -23,7 +23,7 @@ class ITC:
     def setup_session(self, account_email, account_password):
         self.http = httplib2.Http()
 
-        resp, content = self.http.request('https://olympus.itunes.apple.com/v1/app/config?hostname=itunesconnect.apple.com', 'GET')
+        resp, content = self.http.request('https://appstoreconnect.apple.com/olympus/v1/app/config?hostname=itunesconnect.apple.com', 'GET')
         apple_widget_key = json.loads(content)["authServiceKey"]
 
         # Requests to get myacInfo cookie needed for api requests
