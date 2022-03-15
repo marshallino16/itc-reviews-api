@@ -1,4 +1,5 @@
-# ITC Reviews API
+# DEPRECATED due to 2FA
+## ITC Reviews API
 
 Homemade iTunes Connect API for app reviews.
 Read and Reply to all app reviews. 
